@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+section{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    //padding: 20px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+}
+section header ul li a:hover{
+    border-bottom: 1px solid black;
+}
+section header ul li span{
+    cursor: pointer;
+}
+section header ul li button{
+    background-color: #5c3fff;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+section .main{
+    width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section .main .searchbox .search input{
+    position: absolute;
+    /* width: 100%; */
+    outline: none;
+    font-size: 16px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 22px;
+    padding-left: 45px;
+    padding-right: 65px;
+    border-radius: 30px;
+    border: 1px solid #dfe1e5;
+    box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);   
+}
+section .main .searchbox .icon{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    pointer-events: none;
+}
+section .main .searchbox .icon i{
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 50px;
+    color: #888;
+}
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+    margin: 0px 3px;
+    background-color: #f8f9fa;
+    padding: 9px 15px;
+    color: #3c4043;
+    font-size: 14px;
+    border: 1px solid #f8f9fa;
+    outline: none;
+    border-radius: 4px solid #f8f9fa;
+    cursor: pointer;
+}
+section .main .buttons button:hover{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    border: 1px solid #f8f9fa;
+}
+section .main .lang{
+    margin-top: 20px;
+    margin-bottom: 150px;
+    color: #3c4043;
+    font-size: 14px;
+}
+section .main .lang a{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(30, 30, 255);
+}
+section .footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #d2d2d2;
+}
+section .footer .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: rgba(0, 0, 0, 0.5)
+}
+section .footer .row ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+section .footer .row ul li{
+    list-style: none;
+    
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #474747;
+}
+section .footer .row ul li a:hover{
+    border-bottom: 1px solid #474747;
+}
+section .main .lang a:hover{
+    border-bottom: 1px solid rgb(30, 30, 255);;
+}
