@@ -141,7 +141,6 @@ section .footer .row{
 }
 section .footer .row ul{
     display: flex;
-    flex-wrap: wrap;
 }
 section .footer .row ul li{
     list-style: none;
@@ -159,4 +158,62 @@ section .footer .row ul li a:hover{
 }
 section .main .lang a:hover{
     border-bottom: 1px solid rgb(30, 30, 255);;
+}
+
+/*Table View*/
+@media (min-width:769px) and (max-width:1023px){
+
+}
+/*Mobile View*/
+@media (max-width:991px){
+    section .footer .row{
+        flex-wrap: wrap!important;
+        justify-content: center;
+        align-items: center;
+    }
+    section .main .searchbox{
+        width: 90%;
+    }
+}
+@media (max-width:425px){
+    section header ul li button{
+        font-size: 13px;
+        font-weight: normal;
+        padding: 7px 12px;
+    }
+    section .footer .row ul li a{
+        margin-right: 0;
+        margin-left: 0;
+        margin: 10px;
+        font-size: 13px;
+    }
+    section .main .searchbox{
+        width: 90%;
+    }
+    section .main .buttons button{
+        font-size: 13px;
+    }
+    .main img{
+        width: 180px;
+    }
+    section .footer .row ul{
+        padding: 0;
+    }
+    section .main .searchbox .search input{
+        padding: 16px;
+        padding-left: 40px;
+        padding-right: 65px;
+        font-size: 14px;
+    }
+    section .main .searchbox .icon i {
+        font-size: 12px;
+    }
+    section .main .lang{
+        font-size: 13px;
+    }
+}
+@media (max-width: 320px) {
+    .main img {
+        width: 140px;
+    }
 }
